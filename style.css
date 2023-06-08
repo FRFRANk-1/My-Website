@@ -1,3 +1,22 @@
 html{
     background-color:lightblue;
 }
+
+p[draggable="true"] {
+    color:navy;
+}
+
+h1{
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.note-1 {
+    color:black;
+    font-size: larger;
+    font-style: italic;
+}
+
+*{
+    text-align: center;
+}
