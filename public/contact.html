@@ -8,6 +8,21 @@
     *{
         text-align: center;
     }
+
+    .home-button {
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+      padding: 10px 30px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+  }
+
+  .home-button:hover {
+      background-color: #a0458c;
+  }
     </style>
     <head>
     <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
@@ -17,12 +32,19 @@
       <h1>Contact Me</h1>
       <p>Email: frankrli1818@gmail.com</p>
       <p>Located in Boston Area</p>
-      <img src="../assets/1Y6A4016.jpg" height="450"
+      <img src="../assets/1Y6A4016.jpg" height="450">
       <br> 
       <p>Feel free to connect with me!</p>
       <p>If you're also enjoy travling, outdoor and photography!🤗</p>
 
       It's my pleasure to meet you<br />
       </p>
+      <button class="home-button" onclick="goHome()">Home</button>
+
+      <script>
+          function goHome() {
+              location.href="../index.html";
+          }
+      </script>
     </body>
 </html>
