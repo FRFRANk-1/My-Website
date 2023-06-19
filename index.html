@@ -3,19 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link 
-    rel="Stylesheet"
-    href="./style.css"
-    />
-    <title>Frank's Li Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frank's Li Travel World</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Frank Li's Travel World</h1>
     <h2 class="note-1">A Passionate Photographer📸 & Traveler😎  </h2>
     <!-- Horizontal line -->
     <hr/>
     <h2 class="note-2"><a href="./public/Coolest-state-ranking.html">The Beautiful United State🌏</a></h2>
-    <img src="./assets/IMG_5963.jpg" height="450" width="780" alt="Sedona View, Arizona"/>
+    <section>
+        <img src="./assets/IMG_5963.jpg" height="500" width="720" alt="Sedona View, Arizona" class="mySlides"/>
+        <img src="./assets/IMG_9683.jpg" height="700" width="500" alt="Great smoky mountain, North Carolina" class="mySlides"/>
+        <img src="./assets/1Y6A2087.JPG" height="500" width="720" alt="West palm beach, FL" class="mySlides"/>
+    </section>
+
     <hr/>
     <h2 class="note-3"><a href="./public/about.html">Personal Travel Videos link</a></h2>
     <br/>
@@ -23,6 +34,28 @@
     <footer>
         <p draggable="true">© 2023 Runcheng Li</p>
     </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "flex";
+            x[myIndex - 1].style.justifyContent = "center";
+            x[myIndex - 1].style.alignItems = "center";
+            setTimeout(carousel, 3000);
+        }
+    </script> 
+
 </body>
 
 </html>
