@@ -11,17 +11,28 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.note-2{
-    font-family: 'Times New Roman', Times, serif ;
-    font-weight: 100;
-}
-
 .note-1 {
     color:black;
     font-size: larger;
     font-style: italic;
 }
 
+.note-2{
+    font-family: 'Times New Roman', Times, serif ;
+    font-weight: 100;
+}
+
+.note-3{
+    font-family: 'Times New Roman', Times, serif ;
+    font-weight: 100;
+}
+
+.note-4{
+    font-family: 'Times New Roman', Times, serif ;
+    font-weight: 100;
+}
+
 *{
     text-align: center;
 }
+
